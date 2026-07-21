@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram, TikTok } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Music } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -36,7 +36,7 @@ export default function Footer() {
                 className="state-layer p-2.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary transition-colors"
                 aria-label="TikTok"
               >
-                <TikTok className="w-4 h-4" strokeWidth={1.5} />
+                <Music className="w-4 h-4" strokeWidth={1.5} />
               </a>
               <a 
                 href="https://www.instagram.com/fundacion_du?igsh=b2tsOTYybnM3eTg2&utm_source=qr" 
