@@ -59,7 +59,7 @@ export default function MensajePresidentePage() {
       <section className="container-max px-4 sm:px-6 lg:px-8 pb-16">
         <div className="card-elevated p-3 lg:p-4">
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-surface-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XQaUrw4TgXU?si=OweaTUaTW3HVEn8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XQaUrw4TgXU?si=OweaTUaTW3HVEn8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen/>
           </div>
         </div>
       </section>
