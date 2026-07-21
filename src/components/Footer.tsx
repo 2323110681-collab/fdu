@@ -68,11 +68,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-on-surface-variant">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-primary" strokeWidth={1.5} />
-                <span>Bolivar S/N, Villa EL Salvador 15834</span>
+                <span>Jr. Bellavista, Santiago de Surco 15023</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 shrink-0 text-primary" strokeWidth={1.5} />
-                <span>017158878</span>
+                <span>+51 982303771</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 shrink-0 text-primary" strokeWidth={1.5} />
