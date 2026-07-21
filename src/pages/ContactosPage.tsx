@@ -112,13 +112,9 @@ export default function ContactosPage() {
             <div className="flex flex-col gap-6">
               <div className="card-elevated overflow-hidden flex-1">
                 <div className="aspect-square lg:aspect-auto lg:h-full min-h-[320px]">
-                  <iframe
-                    title="Ubicación Fundación DU"
-                    className="w-full h-full min-h-[320px]"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.4137829!2d-76.9732!3d-12.0506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAzJzAyLjIiUyA3NsKwNTgnMjMuNSJX!5e0!3m2!1ses!4v0000000000"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.720741369985!2d-76.97089317998226!3d-12.124461337749887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c786ce33b48d%3A0x9513423098e0efb1!2sJr.%20Bellavista%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1sen!2spe!4v1784644034543!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                    />
                 </div>
               </div>
               <div className="card-outlined p-6">
