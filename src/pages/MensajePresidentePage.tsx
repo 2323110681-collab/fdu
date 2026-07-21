@@ -55,21 +55,22 @@ export default function MensajePresidentePage() {
         </div>
       </section>
 
-      {/* Video */}
-      <section className="container-max px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="card-elevated p-3 lg:p-4">
-          <div className="relative aspect-video rounded-2xl overflow-hidden bg-surface-container">
-             <iframe
-                  src="https://www.youtube.com/embed/XQaUrw4TgXU?si=OweaTUaTW3HVEn8H"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
-                />
-        </div>
-      </section>
+     {/* Video */}
+    <section className="container-max px-4 sm:px-6 lg:px-8 pb-16">
+      <div className="card-elevated p-3 lg:p-4">
+        <div className="relative aspect-video rounded-2xl overflow-hidden bg-surface-container">
+          <iframe
+            src="https://www.youtube.com/embed/XQaUrw4TgXU?si=OweaTUaTW3HVEn8H"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+          />
+        </div> 
+      </div> 
+    </section>
 
       {/* Full message */}
       <section className="bg-surface-container-low">
