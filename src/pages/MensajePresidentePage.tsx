@@ -61,7 +61,7 @@ export default function MensajePresidentePage() {
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-surface-container">
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://youtu.be/XQaUrw4TgXU"
+              src="https://www.youtube.com/watch?v=XQaUrw4TgXU"
               title="Mensaje del Presidente - Fundación DU"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
