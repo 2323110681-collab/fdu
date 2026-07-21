@@ -59,13 +59,15 @@ export default function MensajePresidentePage() {
       <section className="container-max px-4 sm:px-6 lg:px-8 pb-16">
         <div className="card-elevated p-3 lg:p-4">
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-surface-container">
-           <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/XQaUrw4TgXU?si=OweaTUaTW3HVEn8H" 
-              title="Mensaje del Presidente - Fundación DU"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+             <iframe
+                  src="https://www.youtube.com/embed/XQaUrw4TgXU?si=OweaTUaTW3HVEn8H"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                />
         </div>
       </section>
 
