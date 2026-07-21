@@ -4,10 +4,10 @@ import { Send, MapPin, Phone, Mail, User, Briefcase, CheckCircle } from 'lucide-
 type Errors = Partial<Record<'name' | 'email' | 'phone' | 'subject' | 'message', string>>;
 
 const staff = [
-  { name: 'Dr. Carlos Mendoza', position: 'Presidente', phone: '+51 1 234-5678', email: 'presidente@fundaciondu.pe' },
-  { name: 'Mg. Lucía Ramírez', position: 'Directora Ejecutiva', phone: '+51 1 234-5679', email: 'directora@fundaciondu.pe' },
-  { name: 'Ing. Roberto Salas', position: 'Coordinador de Proyectos', phone: '+51 1 234-5680', email: 'proyectos@fundaciondu.pe' },
-  { name: 'Lic. Ana Torres', position: 'Responsable de Comunicaciones', phone: '+51 1 234-5681', email: 'comunicaciones@fundaciondu.pe' },
+  { position: 'Presidente', phone: '+51 1 234-5678', email: 'presidente@fundaciondu.pe' },
+  { position: 'Directora Ejecutiva', phone: '+51 1 234-5679', email: 'directora@fundaciondu.pe' },
+  { position: 'Coordinador de Proyectos', phone: '+51 1 234-5680', email: 'proyectos@fundaciondu.pe' },
+  { position: 'Responsable de Comunicaciones', phone: '+51 1 234-5681', email: 'comunicaciones@fundaciondu.pe' },
 ];
 
 export default function ContactosPage() {
@@ -126,7 +126,7 @@ export default function ContactosPage() {
                   <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.5} />
                   <div>
                     <p className="font-semibold text-on-surface">Sede principal</p>
-                    <p className="text-sm text-on-surface-variant mt-1">Av. Universidad s/n, Lima Sur, Perú</p>
+                    <p className="text-sm text-on-surface-variant mt-1">Bolivar S/N, Villa EL Salvador 15834</p>
                     <p className="text-sm text-on-surface-variant">Lun – Vie, 9:00 a.m. – 6:00 p.m.</p>
                   </div>
                 </div>
@@ -145,15 +145,12 @@ export default function ContactosPage() {
             <p className="mt-4 text-on-surface-variant">Póngase en contacto directo con las áreas de la Fundación.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {staff.map((s) => (
-              <div key={s.name} className="card-elevated p-6 group">
+            {staff.map((s, idx) => (
+              <div key={idx} className="card-elevated p-6 group">
                 <div className="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center mb-4">
                   <User className="w-7 h-7 text-on-primary-container" strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-on-surface">{s.name}</h3>
-                <p className="text-xs text-primary font-medium mt-0.5 flex items-center gap-1.5">
-                  <Briefcase className="w-3.5 h-3.5" strokeWidth={1.5} /> {s.position}
-                </p>
+                <h3 className="font-semibold text-on-surface">{s.position}</h3>
                 <div className="mt-4 space-y-2 text-sm text-on-surface-variant">
                   <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-on-surface-variant/70" strokeWidth={1.5} /> {s.phone}</p>
                   <p className="flex items-center gap-2 truncate"><Mail className="w-4 h-4 text-on-surface-variant/70" strokeWidth={1.5} /> {s.email}</p>

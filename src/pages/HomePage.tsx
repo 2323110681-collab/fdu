@@ -3,13 +3,6 @@ import {
   ArrowRight, GraduationCap, Lightbulb, Users, HeartHandshake, BookOpen, Target, Eye, ShieldCheck,
 } from 'lucide-react';
 
-const stats = [
-  { value: '+15', label: 'Años de trayectoria' },
-  { value: '+5,000', label: 'Estudiantes beneficiados' },
-  { value: '+120', label: 'Proyectos impulsados' },
-  { value: '+40', label: 'Alianzas estratégicas' },
-];
-
 const pillars = [
   { icon: GraduationCap, title: 'Desarrollo Académico', desc: 'Impulsamos programas que elevan la calidad educativa universitaria en Lima Sur.' },
   { icon: Lightbulb, title: 'Innovación', desc: 'Fomentamos la investigación aplicada y soluciones tecnológicas con impacto regional.' },
@@ -27,22 +20,22 @@ export default function HomePage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-16 lg:pt-20">
+      <section className="relative pt-12 lg:pt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-20 via-primary-30 to-primary-40" />
-        <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'radial-gradient(circle at 20% 30%, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
-        <div className="relative container-max px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle at 20% 30%, white 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        <div className="relative container-max px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-on-primary/15 text-on-primary text-xs font-medium backdrop-blur-sm">
               <BookOpen className="w-3.5 h-3.5" /> Fundación para el Desarrollo Universitario de Lima Sur
             </span>
-            <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-on-primary leading-[1.1] tracking-tight">
+            <h1 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold text-on-primary leading-[1.1] tracking-tight">
               Construyendo el futuro académico de Lima Sur
             </h1>
             <p className="mt-6 text-lg text-on-primary/85 leading-relaxed max-w-2xl">
               Una institución sin fines de lucro dedicada a impulsar la educación, la investigación y el desarrollo
               social, articulando esfuerzos entre la universidad y la comunidad.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap gap-3">
               <Link to="/nosotros" className="btn-primary bg-on-primary text-primary hover:shadow-elevation-2">
                 Conócenos <ArrowRight className="w-4 h-4" />
               </Link>
@@ -53,22 +46,12 @@ export default function HomePage() {
           </div>
         </div>
         {/* Wave divider */}
-        <svg className="block w-full h-12 lg:h-20 text-background" viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor">
+        <svg className="block w-full h-10 lg:h-16 text-background" viewBox="0 0 1440 80" preserveAspectRatio="none" fill="currentColor">
           <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" />
         </svg>
       </section>
 
-      {/* Stats */}
-      <section className="container-max px-4 sm:px-6 lg:px-8 -mt-4">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {stats.map((s) => (
-            <div key={s.label} className="card-elevated p-6 text-center">
-              <p className="text-3xl lg:text-4xl font-bold text-primary">{s.value}</p>
-              <p className="mt-1 text-xs lg:text-sm text-on-surface-variant">{s.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Stats removed as requested */}
 
       {/* Pillars */}
       <section className="section-padding mt-8">

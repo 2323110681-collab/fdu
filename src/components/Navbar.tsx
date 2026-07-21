@@ -129,9 +129,9 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
             <NavLink label="La Fundación" items={fundacionItems} active={isActive('/nosotros') || isActive('/mensaje-del-presidente')} />
-            <NavLink label="Publicaciones" active={false} />
-            <NavLink label="Agenda" active={false} />
-            <NavLink label="Blog" active={false} />
+            <NavLink label="Publicaciones" to="/en-construccion" active={isActive('/en-construccion')} />
+            <NavLink label="Agenda" to="/en-construccion" active={isActive('/en-construccion')} />
+            <NavLink label="Blog" to="/en-construccion" active={isActive('/en-construccion')} />
             <NavLink label="Contactos" to="/contactos" active={isActive('/contactos')} />
           </div>
 
@@ -186,15 +186,15 @@ export default function Navbar() {
               <div className="px-3 py-2">
                 <p className="text-xs font-semibold uppercase tracking-wider text-on-surface-variant/60">Secciones</p>
                 <div className="mt-1 flex flex-col">
-                  <div className="state-layer px-3 py-2.5 rounded-xl text-sm text-on-surface-variant flex items-center gap-2">
+                  <Link to="/en-construccion" className="state-layer px-3 py-2.5 rounded-xl text-sm text-on-surface-variant flex items-center gap-2">
                     <Construction className="w-4 h-4" /> Publicaciones — En construcción
-                  </div>
-                  <div className="state-layer px-3 py-2.5 rounded-xl text-sm text-on-surface-variant flex items-center gap-2">
+                  </Link>
+                  <Link to="/en-construccion" className="state-layer px-3 py-2.5 rounded-xl text-sm text-on-surface-variant flex items-center gap-2">
                     <Construction className="w-4 h-4" /> Agenda — En construcción
-                  </div>
-                  <div className="state-layer px-3 py-2.5 rounded-xl text-sm text-on-surface-variant flex items-center gap-2">
+                  </Link>
+                  <Link to="/en-construccion" className="state-layer px-3 py-2.5 rounded-xl text-sm text-on-surface-variant flex items-center gap-2">
                     <Construction className="w-4 h-4" /> Blog — En construcción
-                  </div>
+                  </Link>
                   <Link to="/contactos" className="state-layer px-3 py-2.5 rounded-xl text-sm text-on-surface hover:text-primary">Contactos</Link>
                 </div>
               </div>

@@ -35,8 +35,8 @@ export default function Footer() {
               <li><Link to="/nosotros" className="text-on-surface-variant hover:text-primary transition-colors">Nosotros</Link></li>
               <li><Link to="/mensaje-del-presidente" className="text-on-surface-variant hover:text-primary transition-colors">Mensaje del Presidente</Link></li>
               <li><Link to="/contactos" className="text-on-surface-variant hover:text-primary transition-colors">Contactos</Link></li>
-              <li><span className="text-on-surface-variant/60">Publicaciones</span></li>
-              <li><span className="text-on-surface-variant/60">Blog</span></li>
+              <li><Link to="/en-construccion" className="text-on-surface-variant hover:text-primary transition-colors">Publicaciones</Link></li>
+              <li><Link to="/en-construccion" className="text-on-surface-variant hover:text-primary transition-colors">Blog</Link></li>
             </ul>
           </div>
 
@@ -46,11 +46,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-on-surface-variant">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-primary" strokeWidth={1.5} />
-                <span>Av. Universidad s/n, Lima Sur, Perú</span>
+                <span>Bolivar S/N, Villa EL Salvador 15834</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 shrink-0 text-primary" strokeWidth={1.5} />
-                <span>+51 1 234-5678</span>
+                <span>017158878</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 shrink-0 text-primary" strokeWidth={1.5} />
@@ -62,7 +62,6 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t border-outline-variant/40 flex flex-col sm:flex-row justify-between gap-3 text-xs text-on-surface-variant/70">
           <p>© {new Date().getFullYear()} Fundación para el Desarrollo Universitario de Lima Sur. Todos los derechos reservados.</p>
-          <p>Diseñado con Material Design 3.</p>
         </div>
       </div>
     </footer>

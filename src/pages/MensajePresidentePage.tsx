@@ -30,7 +30,7 @@ export default function MensajePresidentePage() {
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-primary text-on-primary rounded-2xl px-5 py-3 shadow-elevation-2">
-                  <p className="text-sm font-semibold">Dr. Presidente</p>
+                  <p className="text-sm font-semibold">Jose Carlos Goicochea Ponce</p>
                   <p className="text-xs text-on-primary/80">Presidente, Fundación DU</p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function MensajePresidentePage() {
                 <span className="text-on-primary-container font-semibold">P</span>
               </div>
               <div>
-                <p className="font-semibold text-on-surface">Dr. Presidente</p>
+                <p className="font-semibold text-on-surface">Jose Carlos Goicochea Ponce</p>
                 <p className="text-sm text-on-surface-variant">Presidente de la Fundación DU</p>
               </div>
             </div>
