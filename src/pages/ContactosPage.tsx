@@ -112,9 +112,14 @@ export default function ContactosPage() {
             <div className="flex flex-col gap-6">
               <div className="card-elevated overflow-hidden flex-1">
                 <div className="aspect-square lg:aspect-auto lg:h-full min-h-[320px]">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.720741369985!2d-76.97089317998226!3d-12.124461337749887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c786ce33b48d%3A0x9513423098e0efb1!2sJr.%20Bellavista%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1sen!2spe!4v1784644034543!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-                    />
+                  <iframe
+                    title="Ubicación Fundación DU"
+                    className="w-full h-full min-h-[320px]"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.720741369985!2d-76.97089317998226!3d-12.124461337749887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c786ce33b48d%3A0x9513423098e0efb1!2sJr.%20Bellavista%2C%20Santiago%20de%20Surco%2015023!5e0!3m2!1sen!2spe!4v1784644034543!5m2!1sen!2spe"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                  />
                 </div>
               </div>
               <div className="card-outlined p-6">
@@ -122,7 +127,7 @@ export default function ContactosPage() {
                   <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" strokeWidth={1.5} />
                   <div>
                     <p className="font-semibold text-on-surface">Sede principal</p>
-                    <p className="text-sm text-on-surface-variant mt-1">Bolivar S/N, Villa EL Salvador 15834</p>
+                    <p className="text-sm text-on-surface-variant mt-1">Jr. Bellavista, Santiago de Surco 15023</p>
                     <p className="text-sm text-on-surface-variant">Lun – Vie, 9:00 a.m. – 6:00 p.m.</p>
                   </div>
                 </div>
