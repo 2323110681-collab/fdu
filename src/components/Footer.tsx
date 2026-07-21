@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram, TikTok } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -20,11 +20,33 @@ export default function Footer() {
               articulando esfuerzos entre la universidad, el Estado y la sociedad civil.
             </p>
             <div className="flex gap-2 mt-5">
-              {[Linkedin, Facebook, Instagram].map((Icon, i) => (
-                <a key={i} href="#" className="state-layer p-2.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary transition-colors" aria-label="Red social">
-                  <Icon className="w-4 h-4" strokeWidth={1.5} />
-                </a>
-              ))}
+              <a 
+                href="https://www.facebook.com/share/1DNQ4Jw2JV/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="state-layer p-2.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" strokeWidth={1.5} />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@fundaciondu?_r=1&_t=ZS-98CIKizpHTJ" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="state-layer p-2.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary transition-colors"
+                aria-label="TikTok"
+              >
+                <TikTok className="w-4 h-4" strokeWidth={1.5} />
+              </a>
+              <a 
+                href="https://www.instagram.com/fundacion_du?igsh=b2tsOTYybnM3eTg2&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="state-layer p-2.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" strokeWidth={1.5} />
+              </a>
             </div>
           </div>
 
