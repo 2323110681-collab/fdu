@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-on-background font-sans antialiased;
+  }
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  /* M3 Filled Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-primary text-on-primary text-sm font-medium tracking-wide transition-all duration-200 hover:shadow-elevation-2 active:shadow-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50;
+  }
+
+  /* M3 Outlined Button */
+  .btn-outlined {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full border border-outline text-primary text-sm font-medium tracking-wide transition-all duration-200 hover:bg-primary/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50;
+  }
+
+  /* M3 Text Button */
+  .btn-text {
+    @apply inline-flex items-center justify-center gap-2 px-3 py-2 rounded-full text-primary text-sm font-medium tracking-wide transition-all duration-200 hover:bg-primary/10 focus:outline-none;
+  }
+
+  /* M3 Card - elevated */
+  .card-elevated {
+    @apply bg-surface-container-low rounded-3xl shadow-elevation-1 transition-shadow duration-200 hover:shadow-elevation-2;
+  }
+
+  /* M3 Card - filled */
+  .card-filled {
+    @apply bg-surface-container-highest rounded-3xl;
+  }
+
+  /* M3 Card - outlined */
+  .card-outlined {
+    @apply bg-surface rounded-3xl border border-outline-variant;
+  }
+
+  /* M3 Input Field */
+  .field-outlined {
+    @apply w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm placeholder:text-on-surface-variant/60 transition-all duration-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20;
+  }
+
+  .field-outlined:focus {
+    @apply border-primary;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #E1E2EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #495D92;
+  border-radius: 3px;
+}
+
+/* Dropdown animation */
+.dropdown-enter {
+  animation: slideDown 0.2s ease-out;
+}
+
+/* State layers for interactive elements */
+.state-layer {
+  position: relative;
+  overflow: hidden;
+}
+.state-layer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.state-layer:hover::after {
+  opacity: 0.08;
+}
+.state-layer:active::after {
+  opacity: 0.12;
+}
